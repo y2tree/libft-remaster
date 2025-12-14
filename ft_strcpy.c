@@ -3,8 +3,10 @@
 
 char *ft_strcpy(char *coeur2yoann, const char *str)
 {
-    size_t i = 0;
-    while (str[i] != '\0')
+    int i;
+
+    i = 0;
+    while (str[i])
     {
         coeur2yoann[i] = str[i];
         i++;
@@ -15,7 +17,7 @@ char *ft_strcpy(char *coeur2yoann, const char *str)
 int main ()
 {
     char coeur2yoann[20] = "autresfilles";
-    char str[20] = "PPEERRIINNEE";
+    char str[20] = "PPEERRIIN";
     printf("pfff coeur2yoann = %s\n", coeur2yoann);
 
     ft_strcpy(coeur2yoann, str);
